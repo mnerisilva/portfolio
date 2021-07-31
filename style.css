@@ -106,7 +106,7 @@ ul.menu li a:hover {
 
 .home img {
     position: absolute;
-    width: 830px;
+    height: 100vh;
     top: 0;
     right: 0;
     opacity: .1;
