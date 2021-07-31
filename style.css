@@ -10,10 +10,14 @@
 nav.navbar {
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 36px 0;
     color: #fff;
     z-index: 999;
+    transition: all .3s ease;
 }
+
+
+
 .navbar .max-width {
     display: flex;
     align-items: center;
@@ -30,6 +34,18 @@ nav.navbar {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+}
+
+.navbar .logo a::after {
+    content: "";
+    width: 11px;
+    height: 25px;
+    position: absolute;
+    margin-left: -163px;
+    margin-top: 10px;
+    border-left: solid 4px crimson;
+    border-bottom: solid 4px crimson;
+    border-radius: 3px 3px 0px 8px;
 }
 
 
@@ -144,9 +160,21 @@ ul.menu li a:hover {
     display: inline-block;
     color: #fff;
     background-color: crimson;
-    padding: 12px 35px;
+    padding: 12px 36px;
     border: solid 1px crimson;
-    border-radius: 3px;
+    border-radius: 6px;
+    font-size: 25px;
+    margin-top: 20px;    
+}
+
+.home .home-content .t3 span {
+    color: crimson; 
+    font-weight: 500;;
+}
+
+.sticky {
+    padding: 15px 0;
+    background: crimson;    
 }
 
 
