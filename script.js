@@ -1,5 +1,10 @@
 console.log('Working ...');
 
+window.addEventListener('scroll', function(){
+    let navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('sticky', window.scrollY > 0);
+});
+
 const skill_element = document.querySelector('.home-content .t3 .skill');
 
 skill_element.innerHTML = '';
@@ -56,7 +61,7 @@ const arraySkills = {
         skill_element.innerHTML = arraySkills.skill_1.slice(0,11);
     }, tmp+(11*step1)); 
 
-    
+    /*
     step1 = 7000;
 
 
@@ -104,5 +109,6 @@ const arraySkills = {
     setTimeout(function(){
         skill_element.innerHTML = arraySkills.skill_1.slice(0,1);
     }, tmp+(1*step1)); 
+    */
 
 
