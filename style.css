@@ -46,10 +46,10 @@ nav.navbar {
 .navbar .logo a::after {
     content: "";
     width: 11px;
-    height: 25px;
+    height: 26px;
     position: absolute;
-    margin-left: -195px;
-    margin-top: 18px;
+    margin-left: -188px;
+    margin-top: 12px;
     border-left: solid 4px crimson;
     border-bottom: solid 4px crimson;
     border-radius: 3px 3px 0px 8px;
@@ -59,7 +59,7 @@ nav.navbar {
 
 
 nav.navbar .logo a span {
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 600;
     color: crimson;
     letter-spacing: 2px;
@@ -182,14 +182,22 @@ ul.menu li a:hover {
 }
 
 .home .home-content a {
+    transition: color, .2s linear;
     display: inline-block;
     color: #fff;
     background-color: crimson;
     padding: 12px 36px;
-    border: solid 1px crimson;
+    border: solid 3px crimson;
     border-radius: 6px;
     font-size: 25px;
     margin-top: 20px;    
+}
+
+.home .home-content a:hover {
+    transition: color, .2s linear;
+    color: crimson;
+    background-color: transparent;
+    border: solid 3px crimson;
 }
 
 .home .home-content .t3 span {
